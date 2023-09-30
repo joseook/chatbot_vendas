@@ -1,48 +1,48 @@
-# Chatbot de Vendas no WhatsApp
+# WhatsApp Sales Chatbot
 
-Este é um projeto de chatbot de vendas no WhatsApp desenvolvido em Node.js, usando a biblioteca WhatsApp Web Automation (WA Web.js). O chatbot fornece informações sobre cursos à venda e direciona os usuários para o link de compra. Além disso, inclui funcionalidades de autenticação e renovação de tokens.
+This is a WhatsApp sales chatbot project developed in Node.js, using the WhatsApp Web Automation library (WA Web.js). The chatbot provides information about courses for sale and directs users to the purchase link. It also includes authentication and token renewal features.
 
-## Estrutura de Pastas
+## Folder Structure
 
-- `src`: Contém o código-fonte da aplicação.
-  - `config`: Configurações da aplicação.
-  - `controllers`: Controladores para manipular a lógica do chatbot.
-  - `middleware`: Middlewares, incluindo autenticação.
-  - `models`: Modelos de dados, como o modelo de usuário.
-  - `routes`: Definição das rotas da aplicação.
-  - `utils`: Utilitários e funções auxiliares.
-  - `views`: Templates ou arquivos HTML para renderização.
-  - `test`: Arquivos de teste para garantir a qualidade do código.
-- `public`: Armazena arquivos estáticos, como CSS e JavaScript.
-- `logs`: Pasta para armazenar registros ou logs da aplicação.
+- `src`: Contains the application's source code.
+  - `config`: Application settings.
+  - `controllers`: Controllers for handling chatbot logic.
+  - `middleware`: Middlewares, including authentication.
+  - `models`: Data models, such as the user model.
+  - `routes`: Definition of application routes.
+  - `utils`: Utilities and helper functions.
+  - `views`: Templates or HTML files for rendering.
+  - `test`: Test files to ensure code quality.
+- `public`: Stores static files such as CSS and JavaScript.
+- `logs`: Directory for storing application logs.
 
-## Funcionalidades Principais
+## Key Features
 
-- **Autenticação**: Os usuários podem se registrar e fazer login para acessar recursos protegidos.
-- **Tokens JWT**: Autenticação baseada em tokens JWT (JSON Web Tokens).
-- **Renovação de Tokens**: Implementação da renovação de tokens usando refresh tokens.
-- **Limpando Tokens**: Tokens expirados são removidos da lista de tokens do usuário durante a verificação.
+- **Authentication**: Users can register and log in to access protected resources.
+- **JWT Tokens**: Authentication based on JSON Web Tokens (JWT).
+- **Token Renewal**: Implementation of token renewal using refresh tokens.
+- **Token Cleanup**: Expired tokens are removed from the user's token list during verification.
 
-## Configuração
+## Configuration
 
-- Configure as variáveis de ambiente em um arquivo `.env`.
-- Instale as dependências com `npm install`.
-- Execute o servidor com `npm start`.
+- Configure environment variables in a `.env` file.
+- Install dependencies with `npm install`.
+- Start the server with `npm start`.
 
-## Uso
+## Usage
 
-- O chatbot responde a mensagens no WhatsApp e fornece informações sobre os cursos à venda.
-- Para acessar recursos protegidos, como rotas de administração, faça login e use o token JWT.
+- The chatbot responds to WhatsApp messages and provides information about courses for sale.
+- To access protected resources, such as admin routes, log in and use the JWT token.
 
-## Testes
+## Testing
 
-- Os testes podem ser executados com `npm test`.
-- Certifique-se de configurar um ambiente de teste separado, se necessário.
+- Tests can be executed with `npm test`.
+- Make sure to set up a separate test environment if needed.
 
-## Contribuição
+## Contribution
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests.
+Contributions are welcome! Feel free to open issues and submit pull requests.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
